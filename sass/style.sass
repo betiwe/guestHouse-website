@@ -1,0 +1,86 @@
+@import 'normalizes.scss'
+@import 'resets.scss'
+
+$color-green:#52503B
+$color-white: #fff
+
+body
+	font-family: 'Montserrat', sans-serif
+	color: $color-white
+	font-weight: 400
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+	position: relative
+
+// Main section
+
+.main-section
+	height: 800px
+	max-width: 1440px
+	background: url(../img/bg-image.png) center/cover no-repeat
+	
+
+
+// Navigation
+
+.nav-section
+	height: 80px
+	background-color: $color-green
+	margin-bottom: 168px
+	&__navigation-container
+		padding: 10px 0 10px 0
+		height: 60px
+		display: flex
+		align-items: center
+		flex-direction: row
+		justify-content: space-between
+		
+.nav-menu
+	&__list
+		display: flex
+		justify-content: space-between
+	&__list-item
+		padding-right: 24px 
+		font-size: 15px
+	&__list-item:last-child
+		padding-right: 0px 
+
+// Button
+
+.btn
+	width: 117px
+	height: 42px
+	background-color: #fff
+	border: none
+	border-radius: 6px
+
+	font-size: 16px
+	color:$color-green
+	
+
+
+// Title
+
+.title-container
+	max-width: 1200px
+	height: 303px
+	margin: 0 auto
+	text-align: center
+	justify-content: space-evenly
+	&__logo
+		margin-bottom: 34px
+	&__logo-image
+		width: 256px
+		height: 90px
+		
+	&__title
+		font-size: 48px
+		margin-bottom: 34px
+	&__description
+		font-size: 14px
+		font-weight: 200
+		margin-bottom: 113px
+
+
