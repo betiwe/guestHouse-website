@@ -12,13 +12,12 @@ body
 .container
 	max-width: 1200px
 	margin: 0 auto
-	position: relative
 
 // Main section
 
 .main-section
 	height: 800px
-	max-width: 1440px
+	min-width: 1140px
 	background: url(../img/bg-image.png) center/cover no-repeat
 	
 
@@ -55,9 +54,14 @@ body
 	background-color: #fff
 	border: none
 	border-radius: 6px
-
 	font-size: 16px
+	font-weight: 400
+	line-height: 20px
 	color:$color-green
+	&_green
+		background-color: $color-green
+		color: #fff
+	
 	
 
 
@@ -76,11 +80,57 @@ body
 		height: 90px
 		
 	&__title
+		font-weight: 400
 		font-size: 48px
-		margin-bottom: 34px
+		line-height: 53px
+		margin-bottom: 33px
 	&__description
 		font-size: 14px
 		font-weight: 200
+		line-height: 20px
 		margin-bottom: 113px
+		letter-spacing: 2px
 
+// Second section
 
+.second-section
+	height: 410px
+	min-width: 1140px
+	background-color: #FAF8F0
+	display: flex
+	align-items: center
+	&__content-container
+		margin: 0 auto
+		width: 800px
+		height: 210px
+		position: relative
+	&__rectangle
+		background-color: #E08631
+		width: 42px
+		height: 8px
+		margin: 0 auto
+		margin-bottom: 32px
+	&__text-container
+		width: 768px
+		height: 170px
+		margin: 0 auto
+		display: flex
+		flex-direction: row
+	&__left-wrapper-container
+		width: 360px
+		height: 180px
+	&__left-wrapper
+		color: $color-green
+		font-weight: 400
+		font-size: 14px
+		line-height: 20px
+	&__right-wrapper-container
+		width: 343px
+		height: 80px
+		margin-left: 30px
+	&__right-wrapper
+		color: $color-green
+		font-weight: 400
+		font-size: 13px
+		line-height: 20px
+		margin-bottom: 41px 
